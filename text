@@ -1,2 +1,111 @@
+Python
 Python is high-level general purppose language
+
+
+Keyword
 Keyword is reserverd word in python (total 35) which can't use for the variable, function or any other identifier.
+
+
+Namespace
+namespace is system which has unique name for every object. Object might be variable or function.
+python itself maintain namespace in the form of dictionary.
+e.g. namespace as dictionary where keys are the object and values are the object themselves
+
+Types of namespaces :
+- Built-in namespace	(print(), type(), id())
+- Global namespace 		(defined in global in program)
+- Local namespace		(defined in local within function in program)
+
+
+Variable:
+variable is containers which stores the values
+variable is symbolic name in python which refer the reference of the particular data type object
+python is dynamic typed, we are not defined data type to the variable, we just assign variable name to the particular data type.
+
+
+Operator:
+python operator used to perform an operation on variables/objects.
+	OPERATORS: These are the special symbols. Eg- + , * , /, etc.
+	OPERAND: It is the value on which the operator is applied
+	
+
+Types of operators in python:
+- Arithmetic	(+, -, *, /, //, %, **)
+	precedence:
+		P – Parentheses
+		E – Exponentiation
+		M – Multiplication (Multiplication and division have the same precedence)
+		D – Division
+		A – Addition (Addition and subtraction have the same precedence)
+		S – Subtraction
+
+- Logical		(and, or, not)
+	precedence: 
+		not - and - or
+		
+- Bitwise		(&, |, ~, ^, >>, <<)
+	precedence: 
+		~, shift(>>,<<), &, ^, |
+		
+- Comparision	(>, <, ==, !=, >=, <=)
+	precedence:
+		All the operators within comparison operators have same precedence order.
+
+- Assignment	(=, +=, -=, /=, %=, //=, **=, &=, |=, ^=, >>=, <<=)
+
+- Identity		(is, is not)
+
+- Membership	(in, not in)
+
+- Ternary operator (testing a condition in a single line replacing the multiline)
+	e.g. min = a if a < b else b
+	
+	
+Data Types:
+Data types are classification or categorization of data items. 
+Data types are used to define the type of a variable.
+- Numeric 	(int, float, complex)
+- Sequence	(string, list, tuple)
+- Dictionary
+- Boolean
+- Set
+
+Mutable : 		object allows to changing a value without affecting object's identity
+Immutable :  	object doesn't allow to cahanging value, will affect the object's identity
+
+
+String:
+string(data structure) represents a sequence of characters.
+string is Immutable data type
+
+practice on string functions
+
+
+List:
+List is collection of objects, enclosed in [] and seperated by commas(,) - just like dynamic size of an array
+List is non-homogeneous  - it may contain mixed data types (int, string and objects)
+List is mutable - can be altered even after creation
+List comprehension - creating a new list from other iterables like tuples, strings, arrays, list, etc.
+
+practice on List functions
+
+
+Tuple:
+Tuple is similar like List collection of python objects, but the main difference is, tuples are Immutable, once decleare we can't modify.
+Also compare to list accessing data from tuple is fast. 
+
+practice on Tuple functions
+
+
+Set:
+set is an unordered collection data type that is mutable and has no duplicate elements
+since sets are unordered, we can't access the data like list
+
+practice on set functions
+
+Stack:
+Stack works on the principle of “Last-in, first-out”.
+
+Queue:
+Queue works on the principal of "First in first out"
+
