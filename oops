@@ -1,0 +1,107 @@
+python support functional, oops and procedure oriented approach
+
+object have attributes(data or variable) & behaviour(method or function)
+fn in oops called methods
+class = design for the object - blue print
+object = Instance 
+
+way of calling:
+class abc:
+    def fn(self):
+        print("I am class A")
+        
+        
+ob = abc()
+ox = abc()
+
+abc.fn(ob)
+ox.fn()
+
+__init__(self) :similar to constructor - method to initialize the variable - automatically called once obj created
+
+
+size of an object ? - depend upon the no. of variables
+who allocate the size of object ? - constructor
+
+in oops two types of variable: 
+1) class or static variable 
+2) instance variable
+
+in oops three types of methods: 
+1) class method 	- want to use class var, use class method
+2) static method 	- when no concern with the variable that time use static method
+3) instance method (- Accessor methods(getter - only set the val) - mutator methods(setter - only set the val))
+
+class A:
+    
+#     class or static variable modify by class thn only reflect all objects A.school = 'PARISAR'
+    school = 'NALANDA'
+    
+    def __init__(self,m1,m2,m3):
+#        instance variable
+        self.m1 = m1                  
+        self.m2 = m2
+        self.m3 = m3
+        
+#     instance method    
+    def avg(self):                            
+        return ((self.m1 + self.m2 + self.m3) / 3)
+    
+#     instance - getter method - accessor method
+    def get_m1(self):
+        return self.m1
+    
+# instance - setter method - mutator method
+    def set_m1(self,val):
+        self.m1 = val
+        
+#  class method    
+    @classmethod    
+    def get_school(cls):
+        return cls.school
+    
+#     static method
+    @staticmethod
+    def info():
+        print('This is static method')
+        
+ob = A(35,35,35)
+
+print(ob.avg())
+
+print(A.get_school())
+print(ob.get_school())
+
+A.info()
+ob.info()
+
+Class and Object:
+
+
+__init__method in python
+constructor, self and comparing objects
+Types of variable
+Types of methods
+Inner class
+
+
+Inheritance 
+Constructor in Inheritance
+
+
+Polymorphism
+Duck typing
+operator overloading 
+method overloading & method overriding
+
+
+Data abstraction in python and data encapsulation in python programming are related to each other. 
+The main point that is necessary here to note is that data abstraction is only possible to achieve through encapsulation.
+
+Encapsulation means storing or placing data in a single place to make it easily readable and compact in one place. 
+Whereas data abstraction in python programming means to hide internal functionalities 
+that are performing on the application using codes and to show only essential information (class attributes).
+
+
+Encapsulation
+Abstraction
