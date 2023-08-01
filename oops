@@ -89,10 +89,102 @@ Inheritance
 Constructor in Inheritance
 
 
-Polymorphism
-Duck typing
-operator overloading 
-method overloading & method overriding
+Polymorphism:
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
+Ways to acheive polymorphism mechanism:
+- Duck Typing (Interface)
+class a:
+    def execute(self):
+        print('Hello')
+        print('World')
+        
+class b:
+    def fnb(self,ide):
+        ide.execute()
+        
+        
+class c:
+    def execute(self):
+        print('Suraj')
+        print('Vanza')
+        
+        
+oba = a()
+obb = b()
+obc = c()
+
+obb.fnb(oba)
+obb.fnb(obc)
+
+
+- Operator Overloading
+class a:
+    def __init__(self,m1,m2):
+        self.m1 = m1
+        self.m2 = m2
+        
+    def __add__(self,other):
+        x = self.m1 + other.m1
+        y = self.m2 + other.m2
+        
+        s = a(x,y)
+        
+        return (s)
+    
+    def __gt__(self,other):
+        p = self.m1+self.m2
+        q = other.m1+other.m2
+        
+        if p>q:
+            return True
+        else:
+            return False
+        
+        
+ob = a(5,6)
+ox = a(7,8)
+
+sw = ob+ox
+
+print(sw.m1, sw.m2)
+
+if ob>ox:
+    print('OB win')
+else:
+    print('OX win')
+
+- Method Overloading
+	not possible in python but can achieve using *args/*kwargs
+	class x:
+    
+    def fn(self,a,*args):
+        t = a
+        for i in args:
+            t = t+i
+        return t
+    
+ob = x()
+
+print(ob.fn(1,2))
+print(ob.fn(1,2,3))
+print(ob.fn(1,2,3,4))
+
+
+- Method Overriding
+class a:
+    def fn(self):
+        print('class a')
+        
+class b(a):
+    def fn(self):
+        print('class b')
+    
+    
+ob = b()
+
+ob.fn()
+
 
 
 Data abstraction in python and data encapsulation in python programming are related to each other. 
